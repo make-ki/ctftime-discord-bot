@@ -45,7 +45,7 @@ ctftime-discord-bot/
    ```sh
    pip install -r requirements.txt
    ```
-4. Create a `.env` file and add:
+4. Create a `.env` file and add (or hardcode if running locally):
    ```env
    TOKEN = your_discord_bot_token
    CTFTIME_API = ctftime_v1_events_api
