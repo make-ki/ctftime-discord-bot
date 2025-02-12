@@ -4,6 +4,10 @@ import datetime
 import asyncio
 from nextcord.ext import commands, tasks
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# You can hard code and run locally if the tokens aren't being fetched
 
 TOKEN = os.getenv('TOKEN')  # Discord bot token
 CTFTIME_API = os.getenv('CTFTIME_API', 'https://ctftime.org/api/v1/events/') # Api url
