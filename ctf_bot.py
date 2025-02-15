@@ -2,7 +2,8 @@ import nextcord
 import requests
 import datetime
 import asyncio
-from nextcord.ext import commands, tasks, Activity, ActivityType
+from nextcord import Activity, ActivityType
+from nextcord.ext import commands, tasks
 import os
 from dotenv import load_dotenv
 load_dotenv()
