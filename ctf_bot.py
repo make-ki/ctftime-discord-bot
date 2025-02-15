@@ -2,7 +2,7 @@ import nextcord
 import requests
 import datetime
 import asyncio
-from nextcord.ext import commands, tasks
+from nextcord.ext import commands, tasks, Activity, ActivityType
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -104,6 +104,7 @@ async def fetch_ctf_updates():
 async def on_ready():
     print(f"Logged in as {bot.user}")
     await bot.sync_application_commands()
+    await bot.change_presence(activity=Activity(type=ActivityType.listening, name="Yo Yo Honey Singh"))
     fetch_ctf_updates.start()
 
 bot.run(TOKEN)
